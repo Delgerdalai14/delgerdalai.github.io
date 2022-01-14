@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Grade</title>
+</head>
+<body>
+    <div class="main-div">
+        <form class="student-form" action="http://mumstudents.org/params.php" method="post">
+            <h1>Retrieve your grade</h1>
+            <div class="form-line">
+                <div class="form-label"><label for="name">Student Name:</label></div>
+                    <div class="form-input">
+                        <input type="text" id="name" name="name" size="25" placeholder="Student name"/>
+                    </div>
+            </div>
+            <div class="form-line">
+                <div class="form-label"><label for="id">Student ID:</label></div>
+                    <div class="form-input">
+                        <input type="text" id="id" name="id" size="25" placeholder="Student ID"/> 
+                    </div>
+            </div>
+            <div class="form-line">
+                <div class="form-label"><label for="assignment">Choose a assignment:</label></div>
+                <div class="form-input">
+                    <select name="assignment" id="assignment">
+                        <option value="lab1">Lab 1</option>
+                        <option value="lab2">Lab 2</option>
+						<option value="lab2">Lab 4</option>
+						<option value="lab2">Lab 5</option>
+                    </select> 
+                </div> 
+            </div>
+            <div class="form-line">
+                <div class="form-label"><label>Choose a entry:</label></div>
+                <div class="form-input">
+                    <input type="radio" id="2021nov" name="entry" /> <label for="feb21">2021-Nov</label>
+                    <input type="radio" id="2022feb" name="entry"  /> <label for="may21">2022-Feb</label>
+
+                </div>
+            </div>
+            <div class="form-line">
+                <div class="form-label"><label for="yes">Check if above informations are correct:</label></div>
+                <div class="form-input">
+                    <input type="checkbox" id="yes" name="yes" value="Yes" /> <label for="yes">Yes</label>
+                </div>
+            </div>
+            <div class="submit-div"><input type="submit" name="submit" value="Get Grade"/></div>
+        </form>
+    </div>
+</body>
+</html>
