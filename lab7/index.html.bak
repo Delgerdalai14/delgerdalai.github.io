@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Text Decorator</title>
+		<link href="decoratemytext.css" type="text/css" rel="stylesheet">
+		<script src="decoratemytext.js"></script>
+	</head>
+
+	<body data-new-gr-c-s-check-loaded="14.1036.0" data-gr-ext-installed="">
+		<h1>Text Decorator</h1>
+
+		<div>
+			<img src="./decorated.gif" alt="very decorated!">
+		</div>
+
+		<!-- Your UI controls go here -->
+		<fieldset>
+			<legend>Text</legend>
+			<textarea name="text" id="text" cols="30" rows="4">Sample text
+				More samples</textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Decoration</legend>
+			<button onclick="hello()">Hello Guest</button><br />
+			<button id="bigger-button" onclick="makeBigger()">Bigger Decorations!</button><br />
+			<button onclick="malkovitch()">Malkovitch</button><br />
+			<button onclick="pigLatin()">Igpay Atinlay</button><br />
+			<div>
+				<input type="checkbox" name="checkbox" id="check" onchange="onChangeCheckbox(event)">
+				<label for="check">Bling</label>
+			</div>
+		</fieldset>
+	</body>
+</html>
