@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Me</title>
+  </head>
+
+  <body>
+    
+    <div>
+      <button id="start" onclick="rudyTimer()">Click to start</button>
+      <div id="result"></div>
+    </div>
+			<br /><br />
+	<table>
+     
+      <tr>
+	  <td>
+        <label>Account Name:</label>
+		</td>
+		<td>
+        <input type="text" id="account-name" autofocus />
+		</td>
+      </tr>
+
+      <tr>
+	  <td>
+        <label>Deposit:</label>
+		</td>
+		<td>
+        <input type="number" id="deposit" />
+		</td>
+      </tr>
+	  <tr>
+	  <td></td><td>
+      <button id="create">Create new Account</button>
+	  </td></tr>
+   </table>
+      <div>
+        <textarea id="log" rows="8" cols="48" readonly></textarea>
+      </div>
+ 
+
+    <script>
+      var rudyTimer = (function () {
+        timer = null;
+        return function (){
+          if(timer === null) {
+            timer = setInterval(() => {
+              document.getElementById("result").innerText += " Rudy!";
+            }, 500);
+
+            document.getElementById("start").innerText = "Stop";
+          } else {
+            clearInterval(timer);
+            timer = null;
+            document.getElementById("start").innerText = "Click to start";
+          }
+        }
+      }());
+    </script>
+	<script src="account.js"></script>
+  </body>
+</html>
