@@ -1,0 +1,20 @@
+html
+    head
+        title The Number Quiz
+    body
+        div(class="card shadow-lg p-3")
+            div.card-body
+                h4.card-title The Number Quiz
+                p The current score is 
+                    strong #{score}
+                p Guess the next number in the sequence
+                strong #{questions.question}
+                form(class="form", action="/", method="POST")
+                    div.mb-3
+                        input(type="hidden", value=step, name="step")
+                        input(type="hidden", value=score, name="score")
+                    div.mb-3
+                        label(class="form-label", for="answer") Your answer:
+                        input(class="form-control", name="answer" maxlength="2" size="4" type="number" steps="1")
+                    div.d-grid
+                        input(class="btn btn-primary" type="submit" value="Submit")
