@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary</title>
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+</script>
+  
+</head>
+<body class="bg-light">
+  <header>
+    <div class="container">
+      <h1>WAP Online dictionary</h1>
+      <form id="dic-form">
+        <div class="input-group input-group-lg">
+          <span class="input-group-text text-secondary" id="inputGroup-sizing-lg">Term:</span>
+          <input class="form-control" type="text" name="search" id="search-input" required placeholder="Search here...">
+          <button class="btn btn-outline-primary" type="submit">Lookup</button>
+        </div>
+      </form>
+    </div>
+  </header>
+  <div class="container">
+    <div id="result"></div>
+  </div>
+  <script src="dict.js"></script>
+</body>
+</html>
